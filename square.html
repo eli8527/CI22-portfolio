@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Square</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .square {
+            opacity: .5;
+            background-color: rgb(225, 176, 28);
+            width: 500px;
+            height: 500px;
+            margin-top: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .square:hover {
+            opacity: 1;
+        }
+
+        .square__nested {
+            background-color: brown;
+            width: 50%;
+            height: 50%;
+            margin-bottom: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .square__nested--1 {
+            background-color: aqua;
+        }
+
+        .square__nested--2 {
+            background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="square">
+          <div class="square__nested square__nested--1">
+            <div class="square__nested square__nested--2">
+                <div class="square__nested">
+                    <div class="square__nested">
+              
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>
