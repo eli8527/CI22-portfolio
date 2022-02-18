@@ -1,0 +1,43 @@
+body {
+    background-color: green;
+    width: 100vw;
+    height: 200vh;
+    font-family: 'Union', sans-serif;
+    font-size: 40px;
+}
+p {
+    margin: 0;
+}
+.box {
+    width: 50%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "box1 box2";
+}
+
+.header {
+    grid-area: header;
+}
+
+.box1 {
+    grid-area: box2;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media print {
+    body {
+        color: green;
+    }
+}
