@@ -1,0 +1,65 @@
+:root {
+    --page-margin: 50px;
+    --page-margin-mobile: 25px;
+
+    --font-size: 24px;
+    --font-size-mobile: 12px;
+
+    --font-size-secondary: 18px;
+    --font-size-secondary-mobile: 8px;
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+        --page-margin: var(--page-margin-mobile);
+        --font-size: var(--font-size-mobile);
+        --font-size-secondary: var(--font-size-secondary-mobile);   
+    }
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 p {
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin-left: var(--page-margin);
+    margin-right: var(--page-margin);
+}
+
+nav {
+    margin-left: var(--page-margin);
+    margin-right: var(--page-margin);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.spacer {
+    height: 200vh;
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        flex-direction: column;
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        color: green;
+    }
+}
